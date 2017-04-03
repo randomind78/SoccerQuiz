@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Soccer Quiz</string>
+    <string name="test_your_soccer_knowledge">Test your soccer knowledge</string>
+    <string name="italy_item_question1">Italy</string>
+    <string name="brazil_question1">Brazil</string>
+    <string name="germany">Germany</string>
+    <string name="who_did_win_more_golden_ball_awards">Who did win more Golden Ball awards?</string>
+    <string name="please_insert_player_surname_here">Please insert player surname here</string>
+    <string name="who_did_score_more_goals_in_mexico_86">Who did score more goals in Mexico \'86?</string>
+    <string name="lineker">Lineker</string>
+    <string name="rivera" translatable="false">Rivera</string>
+    <string name="voeller" translatable="false">Voeller</string>
+    <string name="italy_question4">Italy</string>
+    <string name="brazil_question4">Brazil</string>
+    <string name="holland">Holland</string>
+    <string name="who_did_belong_italian_team_in_italy_90">Who did belong Italian team in Italy \'90?</string>
+    <string name="schillaci" translatable="false">Schillaci</string>
+    <string name="casiraghi" translatable="false">Casiraghi</string>
+    <string name="dossena" translatable="false">Dossena</string>
+    <string name="who_did_win_his_fourth_golden_ball_in_2016">Who did win his fourth Golden Ball in 2016?</string>
+    <string name="cristiano_ronaldo" translatable="false">Cristiano Ronaldo</string>
+    <string name="benzema" translatable="false">Benzema</string>
+    <string name="ibrahimovic" translatable="false">Ibrahimovic</string>
+    <string name="submit">Submit</string>
+    <string name="which_team_did_win_2014_world_cup">Which team did win Brazil \'14 ?</string>
+    <string name="which_team_did_win_more_world_cups">Which team did win more World Cups ?</string>
+</resources>

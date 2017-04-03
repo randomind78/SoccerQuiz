@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Quiz sul calcio"</string>
+    <string name="brazil_question1">Brasile</string>
+    <string name="brazil_question4">Brasile</string>
+    <string name="germany">Germania</string>
+    <string name="holland">Olanda</string>
+    <string name="italy_item_question1">Italia</string>
+    <string name="italy_question4">Italia</string>
+    <string name="lineker">Linker</string>
+    <string name="please_insert_player_surname_here">Inserisci il cognome del calciatore</string>
+    <string name="submit">Invia</string>
+    <string name="test_your_soccer_knowledge">Testa la tua conoscenza calcistica</string>
+    <string name="who_did_belong_italian_team_in_italy_90">Chi faceva parte dell\'Italia a Italia \'90?</string>
+    <string name="who_did_score_more_goals_in_mexico_86">Chi ha segnato più reti a Messico \'86?</string>
+    <string name="who_did_win_his_fourth_golden_ball_in_2016">Chi ha vinto il suo quarto Pallone d\'oro nel 2016?</string>
+    <string name="who_did_win_more_golden_ball_awards">Chi ha vinto più Palloni d\'oro?</string>
+    <string name="which_team_did_win_2014_world_cup">Quale squadra ha vinto Brasile \'14?</string>
+    <string name="which_team_did_win_more_world_cups">Quale squadra ha vinto più Coppe del mondo?</string>
+</resources>
