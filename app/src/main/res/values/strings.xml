@@ -24,4 +24,10 @@
     <string name="submit">Submit</string>
     <string name="which_team_did_win_2014_world_cup">Which team did win Brazil \'14 ?</string>
     <string name="which_team_did_win_more_world_cups">Which team did win more World Cups ?</string>
+    <string name="youhavetobetteryoursoccerknowledge">You have to better your soccer knowledge</string>
+    <string name="youknowsomethingaboutsoccer">You know something about soccer, but you can do better</string>
+    <string name="prettygoodsoccerknowledge">You have a pretty good soccer knowledge</string>
+    <string name="soccerexpert">Compliments! You are a soccer expert</string>
+    <string name="acceptedreplies">Accepted replies:</string>
+    <string name="of6">of 6</string>
 </resources>

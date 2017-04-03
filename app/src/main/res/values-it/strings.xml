@@ -17,4 +17,10 @@
     <string name="who_did_win_more_golden_ball_awards">Chi ha vinto più Palloni d\'oro?</string>
     <string name="which_team_did_win_2014_world_cup">Quale squadra ha vinto Brasile \'14?</string>
     <string name="which_team_did_win_more_world_cups">Quale squadra ha vinto più Coppe del mondo?</string>
+    <string name="prettygoodsoccerknowledge">Hai una conoscenza calcistica abbastanza buona</string>
+    <string name="soccerexpert">Complimenti! Sei un esperto di calcio</string>
+    <string name="youhavetobetteryoursoccerknowledge">Devi migliorare la tua conoscenza calcistica</string>
+    <string name="youknowsomethingaboutsoccer">Sai qualcosa sul calcio, ma puoi fare meglio</string>
+    <string name="of6">" di 6"</string>
+    <string name="acceptedreplies">"Risposte accettate: "</string>
 </resources>

@@ -1,328 +1,351 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.marconota.soccerquiz.MainActivity"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marconota.soccerquiz.MainActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="1"
         android:scaleType="centerCrop"
         android:src="@drawable/soccer_field" />
-<ScrollView
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-        android:id="@+id/activity_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:paddingTop="8dp"
-        >
-
-        <TextView
+            android:id="@+id/activity_main"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="@string/test_your_soccer_knowledge"
-            android:textAppearance="@style/subtitle"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:paddingTop="@dimen/padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingbottomsubtitle"
+                android:text="@string/test_your_soccer_knowledge"
+                android:textAppearance="@style/subtitle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/which_team_did_win_2014_world_cup"
+                android:textAppearance="@style/questions" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding">
+
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/italy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/italy_item_question1"
+                        android:textColor="@android:color/white"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/brazil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/brazil_question1"
+                        android:textColor="@android:color/white"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/germany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/germany"
+                        android:textColor="@android:color/white"
+
+                        />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/brazil2014_def" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/who_did_win_more_golden_ball_awards"
+                android:textAppearance="@style/questions" />
+
+            <EditText
+                android:id="@+id/question2_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/please_insert_player_surname_here"
+                android:textAppearance="@style/edit_text"
+                android:textColor="#ffffff"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/who_did_score_more_goals_in_mexico_86"
+                android:textAppearance="@style/questions" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/lineker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/lineker"
+                        android:textColor="@android:color/white"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rivera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/rivera"
+                        android:textColor="@android:color/white"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/voeller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/voeller"
+                        android:textColor="@android:color/white"
+
+                        />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/mexico86logo_def" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:text="@string/which_team_did_win_more_world_cups"
+                android:textAppearance="@style/questions" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/italy_question4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/italy_question4"
+                        android:textColor="@android:color/white"
+
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/brazil_question4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/brazil_question4"
+                        android:textColor="@android:color/white"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/holland"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/holland"
+                        android:textColor="@android:color/white" />
+                </RadioGroup>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/wold_cup_def" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:text="@string/who_did_belong_italian_team_in_italy_90"
+                android:textAppearance="@style/questions" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/padding">
+
+                <CheckBox
+                    android:id="@+id/schillaci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/schillaci"
+                    android:textColor="@android:color/white"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/casiraghi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/schillaci"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/casiraghi"
+                    android:textColor="@android:color/white"
+
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/dossena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/casiraghi"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/dossena"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/italy90_italy_team_def" />
+            </RelativeLayout>
+
+
             />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/which_team_did_win_2014_world_cup"
-            android:textAppearance="@style/questions"/>
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:paddingRight="8dp">
 
-
-        <RadioGroup
-            android:id="@+id/radiogroup_question1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <RadioButton
-                android:id="@+id/italy"
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/italy_item_question1"
-                android:buttonTint="@android:color/white"
-                android:textColor="@android:color/white"
+                android:text="@string/who_did_win_his_fourth_golden_ball_in_2016"
+                android:textAppearance="@style/questions" />
 
-                />
-            <RadioButton
-                android:id="@+id/brazil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/brazil_question1"
-                android:buttonTint="@android:color/white"
-                android:textColor="@android:color/white"
-
-                />
-            <RadioButton
-                android:id="@+id/germany"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/germany"
-                android:layout_marginBottom="8dp"
-                android:buttonTint="@android:color/white"
-                android:textColor="@android:color/white"
-
-                />
-        </RadioGroup>
-           <ImageView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/brazil2014_def"
-               android:layout_alignParentRight="true"
-               />
-
-       </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/who_did_win_more_golden_ball_awards"
-            android:textAppearance="@style/questions"/>
-        <EditText
-            android:id="@+id/question2_edittext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/please_insert_player_surname_here"
-            android:textColor="#ffffff"
-android:textAppearance="@style/edit_text"
-
-        />
-     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="@string/who_did_score_more_goals_in_mexico_86"
-         android:textAppearance="@style/questions"
-         />
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingRight="8dp">
+                android:paddingRight="@dimen/padding">
 
-     <RadioGroup
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content">
-         <RadioButton
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/lineker"
-             android:id="@+id/lineker"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-             />
-         <RadioButton
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/rivera"
-             android:id="@+id/rivera"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
+                    <RadioButton
+                        android:id="@+id/cristiano_ronaldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/cristiano_ronaldo"
+                        android:textColor="@android:color/white"
 
-             />
-         <RadioButton
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/voeller"
-             android:id="@+id/voeller"
-             android:layout_marginBottom="8dp"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
+                        />
 
-             />
-     </RadioGroup>
+                    <RadioButton
+                        android:id="@+id/benzema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/benzema"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/ibrahimovic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/ibrahimovic"
+                        android:textColor="@android:color/white"
+
+                        />
+                </RadioGroup>
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/mexico86logo_def"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/golden_ball_def" />
             </RelativeLayout>
 
 
-     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="@string/which_team_did_win_more_world_cups"
-         android:textAppearance="@style/questions"
-         android:layout_marginBottom="8dp"/>
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingRight="8dp">
-     <RadioGroup
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content">
+                android:orientation="horizontal">
 
-         <RadioButton
-             android:id="@+id/italy_question4"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:buttonTint="@android:color/white"
-             android:text="@string/italy_question4"
-             android:textColor="@android:color/white"
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
-
-             />
-
-         <RadioButton
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/brazil_question4"
-             android:id="@+id/brazil_question4"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
-
-             />
-         <RadioButton
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/holland"
-             android:id="@+id/holland"
-             android:layout_marginBottom="8dp"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
-             />
-     </RadioGroup>
-                <ImageView
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/wold_cup_def"
-                    android:layout_alignParentRight="true"/>
-            </RelativeLayout>
-     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="@string/who_did_belong_italian_team_in_italy_90"
-         android:textAppearance="@style/questions"
-         android:layout_marginBottom="8dp"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingRight="8dp">
+                    android:layout_marginTop="16dp"
+                    android:onClick="displayScore"
+                    android:text="@string/submit" />
 
-     <CheckBox
-         android:id="@+id/schillaci"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="@string/schillaci"
-         android:buttonTint="@android:color/white"
-         android:textColor="@android:color/white"
-
-         />
-     <CheckBox
-         android:id="@+id/casiraghi"
-         android:layout_below="@id/schillaci"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="@string/casiraghi"
-         android:buttonTint="@android:color/white"
-         android:textColor="@android:color/white"
-
-
-         />
-
-     <CheckBox
-         android:id="@+id/dossena"
-         android:layout_below="@id/casiraghi"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="@string/dossena"
-         android:layout_marginBottom="8dp"
-         android:buttonTint="@android:color/white"
-         android:textColor="@android:color/white" />
-                <ImageView
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/italy90_italy_team_def"
-                    android:layout_alignParentRight="true"/>
-         </RelativeLayout>
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
 
-
-         />
-     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:text="@string/who_did_win_his_fourth_golden_ball_in_2016"
-         android:textAppearance="@style/questions"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingRight="8dp">
-     <RadioGroup
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content">
-         <RadioButton
-             android:id="@+id/cristiano_ronaldo"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/cristiano_ronaldo"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
-
-             />
-         <RadioButton
-             android:id="@+id/benzema"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/benzema"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
-             />
-         <RadioButton
-             android:id="@+id/ibrahimovic"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="@string/ibrahimovic"
-             android:buttonTint="@android:color/white"
-             android:textColor="@android:color/white"
-
-             />
-     </RadioGroup>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/golden_ball_def"
-                    android:layout_alignParentRight="true"/>
-            </RelativeLayout>
-
-
-     <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:orientation="horizontal">
-         <TextView
-             android:layout_width="0dp"
-             android:layout_height="wrap_content"
-             android:layout_weight="1"/>
-     <Button
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_marginTop="16dp"
-         android:text="@string/submit"
-         android:onClick="displayScore"/>
-
-         <TextView
-             android:layout_width="0dp"
-             android:layout_height="wrap_content"
-             android:layout_weight="1"/>
- </LinearLayout>
- </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
 </RelativeLayout>
 

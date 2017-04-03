@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
             question6Value = 1;
 
         }
-
+// Calculate quiz score
 
         quizScore = question1Value + question2Value + question3Value + question4Value + question5Value + question6Value;
         return quizScore;
@@ -163,16 +163,16 @@ public class MainActivity extends AppCompatActivity {
         String abilityMessage = "";
         int acceptedRepliesFinalValue = calculateScore();
         if (acceptedRepliesFinalValue == 0) {
-            abilityMessage = "You have to better your soccer knowledge";
+            abilityMessage = getString(R.string.youhavetobetteryoursoccerknowledge);
         } else if (acceptedRepliesFinalValue <= 2) {
-            abilityMessage = "You know something about soccer,\nbut you can do better";
+            abilityMessage = getString(R.string.youknowsomethingaboutsoccer);
         } else if (acceptedRepliesFinalValue <= 4) {
-            abilityMessage = "You have a pretty good soccer knowledge";
+            abilityMessage = getString(R.string.prettygoodsoccerknowledge);
         } else if (acceptedRepliesFinalValue <= 6) {
-            abilityMessage = "Compliments! You are a soccer expert";
+            abilityMessage = getString(R.string.soccerexpert);
         }
         Context context = getApplicationContext();
-        CharSequence text = "Accepted replies: " + acceptedRepliesFinalValue + " of 6";
+        CharSequence text = getString(R.string.acceptedreplies) + acceptedRepliesFinalValue + getString(R.string.of6);
         text = text + "\n" + abilityMessage;
         int duration = Toast.LENGTH_SHORT;
 
