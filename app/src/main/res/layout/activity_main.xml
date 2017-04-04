@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.marconota.soccerquiz.MainActivity">
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -15,7 +18,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
 
         <LinearLayout
             android:id="@+id/activity_main"
@@ -40,13 +47,26 @@
                 android:text="@string/which_team_did_win_2014_world_cup"
                 android:textAppearance="@style/questions" />
 
-            <RelativeLayout
+
+            <!-- START*** CardView Container *** -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardCornerRadius="@dimen/cardcornerradius"
+                card_view:cardElevation="@dimen/cardelevation"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/cardcontentpadding">
+
+
+                <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/padding">
 
 
-                <RadioGroup
+                    <RadioGroup
                     android:id="@+id/radiogroup_question1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -89,7 +109,12 @@
                     android:layout_alignParentRight="true"
                     android:src="@drawable/brazil2014_def" />
 
-            </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <!-- END*** CardView Container *** -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -97,7 +122,19 @@
                 android:text="@string/who_did_win_more_golden_ball_awards"
                 android:textAppearance="@style/questions" />
 
-            <EditText
+            <!-- START*** CardView Container *** -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardCornerRadius="@dimen/cardcornerradius"
+                card_view:cardElevation="@dimen/cardelevation"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/cardcontentpadding">
+
+
+                <EditText
                 android:id="@+id/question2_edittext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -107,13 +144,31 @@
 
                 />
 
+
+            </android.support.v7.widget.CardView>
+            <!-- END*** CardView Container *** -->
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/who_did_score_more_goals_in_mexico_86"
                 android:textAppearance="@style/questions" />
 
-            <RelativeLayout
+
+            <!-- START*** CardView Container *** -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardCornerRadius="@dimen/cardcornerradius"
+                card_view:cardElevation="@dimen/cardelevation"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/cardcontentpadding">
+
+
+                <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/padding">
@@ -162,6 +217,10 @@
             </RelativeLayout>
 
 
+            </android.support.v7.widget.CardView>
+            <!-- END*** CardView Container *** -->
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -169,7 +228,20 @@
                 android:text="@string/which_team_did_win_more_world_cups"
                 android:textAppearance="@style/questions" />
 
-            <RelativeLayout
+
+            <!-- START*** CardView Container *** -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardCornerRadius="@dimen/cardcornerradius"
+                card_view:cardElevation="@dimen/cardelevation"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/cardcontentpadding">
+
+
+                <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/padding">
@@ -216,6 +288,11 @@
                     android:src="@drawable/wold_cup_def" />
             </RelativeLayout>
 
+
+            </android.support.v7.widget.CardView>
+            <!-- END*** CardView Container *** -->
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -223,7 +300,20 @@
                 android:text="@string/who_did_belong_italian_team_in_italy_90"
                 android:textAppearance="@style/questions" />
 
-            <RelativeLayout
+
+            <!-- START*** CardView Container *** -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardCornerRadius="@dimen/cardcontentpadding"
+                card_view:cardElevation="@dimen/cardelevation"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/cardcontentpadding">
+
+
+                <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/padding">
@@ -268,15 +358,32 @@
             </RelativeLayout>
 
 
+            </android.support.v7.widget.CardView>
+            <!-- END*** CardView Container *** -->
+
+
             />
 
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/who_did_win_his_fourth_golden_ball_in_2016"
                 android:textAppearance="@style/questions" />
 
-            <RelativeLayout
+
+            <!-- START*** CardView Container *** -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardCornerRadius="@dimen/cardcornerradius"
+                card_view:cardElevation="@dimen/cardelevation"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/cardcontentpadding">
+
+                <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/padding">
@@ -322,6 +429,10 @@
             </RelativeLayout>
 
 
+            </android.support.v7.widget.CardView>
+            <!-- END*** CardView Container *** -->
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -332,19 +443,26 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
-                <Button
+                <android.support.design.widget.FloatingActionButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
                     android:layout_marginTop="16dp"
                     android:onClick="displayScore"
-                    android:text="@string/submit" />
+                    android:src="@drawable/ok"
+                    app:borderWidth="0dp"
+                    app:elevation="6dp"
+                    app:pressedTranslationZ="12dp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
             </LinearLayout>
+
+
         </LinearLayout>
+
 
     </ScrollView>
 </RelativeLayout>

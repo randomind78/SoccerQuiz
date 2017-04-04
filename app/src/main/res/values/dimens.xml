@@ -3,4 +3,7 @@
     <dimen name="padding">8dp</dimen>
     <dimen name="paddingbottomsubtitle">16dp</dimen>
     <dimen name="margin">8sp</dimen>
+    <dimen name="cardcornerradius">6dp</dimen>
+    <dimen name="cardelevation">5dp</dimen>
+    <dimen name="cardcontentpadding">10dp</dimen>
 </resources>
