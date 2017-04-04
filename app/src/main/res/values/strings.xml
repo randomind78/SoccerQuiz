@@ -28,6 +28,6 @@
     <string name="youknowsomethingaboutsoccer">You know something about soccer, but you can do better</string>
     <string name="prettygoodsoccerknowledge">You have a pretty good soccer knowledge</string>
     <string name="soccerexpert">Compliments! You are a soccer expert</string>
-    <string name="acceptedreplies">Accepted replies:</string>
-    <string name="of6">of 6</string>
+    <string name="acceptedreplies">"Accepted replies: "</string>
+    <string name="of6">" of 6"</string>
 </resources>
