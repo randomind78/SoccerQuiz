@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context="com.marconota.soccerquiz.MainActivity">
 
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +21,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
-
 
         <LinearLayout
             android:id="@+id/activity_main"
@@ -47,7 +45,6 @@
                 android:text="@string/which_team_did_win_2014_world_cup"
                 android:textAppearance="@style/questions" />
 
-
             <!-- START*** CardView Container *** -->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -59,59 +56,49 @@
                 card_view:cardUseCompatPadding="true"
                 card_view:contentPadding="@dimen/cardcontentpadding">
 
-
                 <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingRight="@dimen/padding">
-
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/padding">
 
                     <RadioGroup
-                    android:id="@+id/radiogroup_question1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                        android:id="@+id/radiogroup_question1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <RadioButton
-                        android:id="@+id/italy"
+                        <RadioButton
+                            android:id="@+id/italy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/italy_item_question1"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/brazil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/brazil_question1"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/germany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/germany"
+                            android:textColor="@android:color/white" />
+                    </RadioGroup>
+
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/italy_item_question1"
-                        android:textColor="@android:color/white"
-
-                        />
-
-                    <RadioButton
-                        android:id="@+id/brazil"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/brazil_question1"
-                        android:textColor="@android:color/white"
-
-                        />
-
-                    <RadioButton
-                        android:id="@+id/germany"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/germany"
-                        android:textColor="@android:color/white"
-
-                        />
-                </RadioGroup>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/brazil2014_def" />
-
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/brazil2014_def" />
 
                 </RelativeLayout>
-
 
             </android.support.v7.widget.CardView>
             <!-- END*** CardView Container *** -->
@@ -133,28 +120,22 @@
                 card_view:cardUseCompatPadding="true"
                 card_view:contentPadding="@dimen/cardcontentpadding">
 
-
                 <EditText
-                android:id="@+id/question2_edittext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/please_insert_player_surname_here"
-                android:textAppearance="@style/edit_text"
-                android:textColor="#ffffff"
-
-                />
-
+                    android:id="@+id/question2_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/please_insert_player_surname_here"
+                    android:textAppearance="@style/edit_text"
+                    android:textColor="#ffffff" />
 
             </android.support.v7.widget.CardView>
             <!-- END*** CardView Container *** -->
-
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/who_did_score_more_goals_in_mexico_86"
                 android:textAppearance="@style/questions" />
-
 
             <!-- START*** CardView Container *** -->
             <android.support.v7.widget.CardView
@@ -167,54 +148,47 @@
                 card_view:cardUseCompatPadding="true"
                 card_view:contentPadding="@dimen/cardcontentpadding">
 
-
                 <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingRight="@dimen/padding">
-
-                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/lineker"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/lineker"
-                        android:textColor="@android:color/white"
-
-                        />
-
-                    <RadioButton
-                        android:id="@+id/rivera"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/rivera"
-                        android:textColor="@android:color/white"
-
-                        />
-
-                    <RadioButton
-                        android:id="@+id/voeller"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/voeller"
-                        android:textColor="@android:color/white"
-
-                        />
-                </RadioGroup>
-
-                <ImageView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/mexico86logo_def" />
-            </RelativeLayout>
+                    android:paddingRight="@dimen/padding">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/lineker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/lineker"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/rivera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/rivera"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/voeller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/voeller"
+                            android:textColor="@android:color/white" />
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/mexico86logo_def" />
+                </RelativeLayout>
 
 
             </android.support.v7.widget.CardView>
@@ -242,56 +216,49 @@
 
 
                 <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingRight="@dimen/padding">
-
-                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/italy_question4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/italy_question4"
-                        android:textColor="@android:color/white"
-
-
-                        />
-
-                    <RadioButton
-                        android:id="@+id/brazil_question4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/brazil_question4"
-                        android:textColor="@android:color/white"
-
-                        />
-
-                    <RadioButton
-                        android:id="@+id/holland"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/holland"
-                        android:textColor="@android:color/white" />
-                </RadioGroup>
-
-                <ImageView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/wold_cup_def" />
-            </RelativeLayout>
+                    android:paddingRight="@dimen/padding">
 
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/italy_question4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/italy_question4"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/brazil_question4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/brazil_question4"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/holland"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/holland"
+                            android:textColor="@android:color/white" />
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/wold_cup_def" />
+                </RelativeLayout>
 
             </android.support.v7.widget.CardView>
             <!-- END*** CardView Container *** -->
-
 
             <TextView
                 android:layout_width="match_parent"
@@ -299,7 +266,6 @@
                 android:layout_marginBottom="@dimen/margin"
                 android:text="@string/who_did_belong_italian_team_in_italy_90"
                 android:textAppearance="@style/questions" />
-
 
             <!-- START*** CardView Container *** -->
             <android.support.v7.widget.CardView
@@ -312,57 +278,48 @@
                 card_view:cardUseCompatPadding="true"
                 card_view:contentPadding="@dimen/cardcontentpadding">
 
-
                 <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingRight="@dimen/padding">
-
-                <CheckBox
-                    android:id="@+id/schillaci"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:buttonTint="@android:color/white"
-                    android:text="@string/schillaci"
-                    android:textColor="@android:color/white"
+                    android:paddingRight="@dimen/padding">
 
-                    />
+                    <CheckBox
+                        android:id="@+id/schillaci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/schillaci"
+                        android:textColor="@android:color/white" />
 
-                <CheckBox
-                    android:id="@+id/casiraghi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/schillaci"
-                    android:buttonTint="@android:color/white"
-                    android:text="@string/casiraghi"
-                    android:textColor="@android:color/white"
+                    <CheckBox
+                        android:id="@+id/casiraghi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/schillaci"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/casiraghi"
+                        android:textColor="@android:color/white" />
 
+                    <CheckBox
+                        android:id="@+id/dossena"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/casiraghi"
+                        android:layout_marginBottom="@dimen/margin"
+                        android:buttonTint="@android:color/white"
+                        android:text="@string/dossena"
+                        android:textColor="@android:color/white" />
 
-                    />
-
-                <CheckBox
-                    android:id="@+id/dossena"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/casiraghi"
-                    android:layout_marginBottom="@dimen/margin"
-                    android:buttonTint="@android:color/white"
-                    android:text="@string/dossena"
-                    android:textColor="@android:color/white" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/italy90_italy_team_def" />
-            </RelativeLayout>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/italy90_italy_team_def" />
+                </RelativeLayout>
 
 
             </android.support.v7.widget.CardView>
             <!-- END*** CardView Container *** -->
-
-
-            />
 
             <TextView
                 android:id="@+id/textView"
@@ -384,49 +341,45 @@
                 card_view:contentPadding="@dimen/cardcontentpadding">
 
                 <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingRight="@dimen/padding">
-
-                <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <RadioButton
-                        android:id="@+id/cristiano_ronaldo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/cristiano_ronaldo"
-                        android:textColor="@android:color/white"
-
-                        />
-
-                    <RadioButton
-                        android:id="@+id/benzema"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/benzema"
-                        android:textColor="@android:color/white" />
-
-                    <RadioButton
-                        android:id="@+id/ibrahimovic"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="@android:color/white"
-                        android:text="@string/ibrahimovic"
-                        android:textColor="@android:color/white"
-
-                        />
-                </RadioGroup>
-
-                <ImageView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/golden_ball_def" />
-            </RelativeLayout>
+                    android:paddingRight="@dimen/padding">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/cristiano_ronaldo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/cristiano_ronaldo"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/benzema"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/benzema"
+                            android:textColor="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/ibrahimovic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@android:color/white"
+                            android:text="@string/ibrahimovic"
+                            android:textColor="@android:color/white" />
+                    </RadioGroup>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/golden_ball_def" />
+                </RelativeLayout>
 
 
             </android.support.v7.widget.CardView>
@@ -459,11 +412,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
             </LinearLayout>
-
-
         </LinearLayout>
-
-
     </ScrollView>
 </RelativeLayout>
 

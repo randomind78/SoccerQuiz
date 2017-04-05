@@ -11,12 +11,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     //method to calculate quiz score
@@ -34,17 +32,11 @@ public class MainActivity extends AppCompatActivity {
         // Check which radio button was clicked
         if (italyRadioButtonIsChecked) {
             question1Value = 0;
-
-
         } else if (brazilRadioButtonIsChecked) {
             question1Value = 0;
-
-
         } else if (germanyRadioButtonIsChecked) {
             question1Value = 1;
-
         }
-
 
         //Provides values for QUESTION2 (edit text)
 
@@ -54,16 +46,11 @@ public class MainActivity extends AppCompatActivity {
         int question2Value = 0;
         if (question2TextValue.equalsIgnoreCase("Messi")) {
             question2Value = 1;
-
         } else {
             question2Value = 0;
-
-
         }
 
-
         //Provides values for QUESTION3 (radio button)
-
         int question3Value = 0;
         RadioButton riveraRadioButton = (RadioButton) findViewById(R.id.rivera);
         boolean riveraRadioButtonIsChecked = riveraRadioButton.isChecked();
@@ -72,22 +59,16 @@ public class MainActivity extends AppCompatActivity {
         RadioButton linekerRadioButton = (RadioButton) findViewById(R.id.lineker);
         boolean linekerRadioButtonIsChecked = linekerRadioButton.isChecked();
 
-        // Check which radio button was clicked
+        // Checks which radio button was clicked
         if (riveraRadioButtonIsChecked) {
             question3Value = 0;
-
-
         } else if (voellerRadioButtonIsChecked) {
             question3Value = 0;
-
         } else if (linekerRadioButtonIsChecked) {
             question3Value = 1;
-
         }
 
-
         //Provides values for QUESTION 4 (radio button) >
-
         int question4Value = 0;
         RadioButton hollandRadioButton = (RadioButton) findViewById(R.id.holland);
         boolean hollandRadioButtonIsChecked = hollandRadioButton.isChecked();
@@ -96,19 +77,14 @@ public class MainActivity extends AppCompatActivity {
         RadioButton brazilRadioButtonQ4 = (RadioButton) findViewById(R.id.brazil_question4);
         boolean brazilRadioButtonQ4IsChecked = brazilRadioButtonQ4.isChecked();
 
-        // Check which radio button was clicked
+        // Checks which radio button was clicked
         if (hollandRadioButtonIsChecked) {
             question4Value = 0;
-
         } else if (italyRadioButtonQ4IsChecked) {
             question4Value = 0;
-
-
         } else if (brazilRadioButtonQ4IsChecked) {
             question4Value = 1;
-
         }
-
 
         //Provides values for QUESTION 5 (checkbox)
 
@@ -121,16 +97,11 @@ public class MainActivity extends AppCompatActivity {
         boolean dossenaValue = dossena_checkbox.isChecked();
         if (schillaciValue & casiraghiValue == false & dossenaValue == false) {
             question5Value = 1;
-
         } else {
-
             question5Value = 0;
-
         }
 
-
         //Provides values for QUESTION 6 (radio button)
-
         int question6Value = 0;
         RadioButton benzemaRadioButton = (RadioButton) findViewById(R.id.benzema);
         boolean benzemaRadioButtonIsChecked = benzemaRadioButton.isChecked();
@@ -139,24 +110,19 @@ public class MainActivity extends AppCompatActivity {
         RadioButton cristianoRonaldoRadioButton = (RadioButton) findViewById(R.id.cristiano_ronaldo);
         boolean cristianoRonaldoRadioButtonIsChecked = cristianoRonaldoRadioButton.isChecked();
 
-        // Check which radio button was clicked
+        // Checks which radio button was clicked
         if (benzemaRadioButtonIsChecked) {
             question6Value = 0;
-
         } else if (ibrahimovicRadioButtonIsChecked) {
             question6Value = 0;
-
-
         } else if (cristianoRonaldoRadioButtonIsChecked) {
             question6Value = 1;
-
         }
-// Calculate quiz score
 
+        // Calculates quiz score
         quizScore = question1Value + question2Value + question3Value + question4Value + question5Value + question6Value;
         return quizScore;
     }
-
 
     //Method to display a toast message with score and ability message, when submit button is clicked
     public void displayScore(View view) {
@@ -175,13 +141,9 @@ public class MainActivity extends AppCompatActivity {
         CharSequence text = getString(R.string.acceptedreplies) + acceptedRepliesFinalValue + getString(R.string.of6);
         text = text + "\n" + abilityMessage;
         int duration = Toast.LENGTH_SHORT;
-
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
     }
-
-
 }
 
 
