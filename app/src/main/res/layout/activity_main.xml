@@ -125,8 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="@string/please_insert_player_surname_here"
-                    android:textAppearance="@style/edit_text"
-                    android:textColor="#ffffff" />
+                    android:textAppearance="@style/edit_text" />
 
             </android.support.v7.widget.CardView>
             <!-- END*** CardView Container *** -->

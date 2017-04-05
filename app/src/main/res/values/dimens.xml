@@ -6,4 +6,7 @@
     <dimen name="cardcornerradius">6dp</dimen>
     <dimen name="cardelevation">5dp</dimen>
     <dimen name="cardcontentpadding">10dp</dimen>
+    <dimen name="textsizequestions">16dp</dimen>
+    <dimen name="textsizesubtitle">20dp</dimen>
+    <dimen name="textsizeedittext">16dp</dimen>
 </resources>

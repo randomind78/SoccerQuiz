@@ -2,5 +2,10 @@
 <resources>
     <color name="colorPrimary">#579e28</color>
     <color name="colorPrimaryDark">#35741b</color>
-    <color name="colorAccent">#388E3C</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="textColorHint">#90ffffff</color>
+    <color name="textColorQuestions">#ffffff</color>
+    <color name="textColorSubtitle">#ffffff</color>
+    <color name="textColorEditText">#ffffff</color>
+    <color name="textColorPrimary">#ffffff</color>
 </resources>
