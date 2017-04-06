@@ -2,10 +2,11 @@
 <resources>
     <color name="colorPrimary">#579e28</color>
     <color name="colorPrimaryDark">#35741b</color>
-    <color name="colorAccent">#ffffff</color>
+    <color name="colorAccent">#579e28</color>
     <color name="textColorHint">#90ffffff</color>
     <color name="textColorQuestions">#ffffff</color>
     <color name="textColorSubtitle">#ffffff</color>
     <color name="textColorEditText">#ffffff</color>
     <color name="textColorPrimary">#ffffff</color>
+    <color name="cardViewBackgroundColor">#80d1d1d1</color>
 </resources>

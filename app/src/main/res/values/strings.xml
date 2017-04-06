@@ -1,33 +1,33 @@
 <resources>
     <string name="app_name">Soccer Quiz</string>
-    <string name="test_your_soccer_knowledge">Test your soccer knowledge</string>
-    <string name="italy_item_question1">Italy</string>
-    <string name="brazil_question1">Brazil</string>
-    <string name="germany">Germany</string>
-    <string name="who_did_win_more_golden_ball_awards">Who did win more Golden Ball awards?</string>
-    <string name="please_insert_player_surname_here">Please insert player surname here</string>
-    <string name="who_did_score_more_goals_in_mexico_86">Who did score more goals in Mexico \'86?</string>
-    <string name="lineker">Lineker</string>
-    <string name="rivera" translatable="false">Rivera</string>
-    <string name="voeller" translatable="false">Voeller</string>
-    <string name="italy_question4">Italy</string>
-    <string name="brazil_question4">Brazil</string>
-    <string name="holland">Holland</string>
-    <string name="who_did_belong_italian_team_in_italy_90">Who did belong Italian team in Italy \'90?</string>
-    <string name="schillaci" translatable="false">Schillaci</string>
-    <string name="casiraghi" translatable="false">Casiraghi</string>
-    <string name="dossena" translatable="false">Dossena</string>
-    <string name="who_did_win_his_fourth_golden_ball_in_2016">Who did win his fourth Golden Ball in 2016?</string>
-    <string name="cristiano_ronaldo" translatable="false">Cristiano Ronaldo</string>
-    <string name="benzema" translatable="false">Benzema</string>
-    <string name="ibrahimovic" translatable="false">Ibrahimovic</string>
+    <string name="test_soccer_knowledge">Test your soccer knowledge</string>
+    <string name="italy_item_q1">Italy</string>
+    <string name="brazil_item_q1">Brazil</string>
+    <string name="germany_item_q1">Germany</string>
+    <string name="more_golden_ball_winner_q2">Who did win more Golden Ball awards?</string>
+    <string name="edit_text_hint">Please insert player surname here</string>
+    <string name="mexico_86_top_scorer_q3">Who did score more goals in Mexico \'86?</string>
+    <string name="lineker_item_q3">Lineker</string>
+    <string name="rivera_item_q3" translatable="false">Rivera</string>
+    <string name="voeller_item_q3" translatable="false">Voeller</string>
+    <string name="italy_item_q4">Italy</string>
+    <string name="brazil_item_q4">Brazil</string>
+    <string name="holland_item_q4">Holland</string>
+    <string name="italy_team_player_italy_90_q5">Who did belong Italian team in Italy \'90?</string>
+    <string name="schillaci_item_q5" translatable="false">Schillaci</string>
+    <string name="casiraghi_item_q5" translatable="false">Casiraghi</string>
+    <string name="dossena_item_q5" translatable="false">Dossena</string>
+    <string name="golden_ball_2016_winner_q6">Who did win his fourth Golden Ball in 2016?</string>
+    <string name="cristiano_ronaldo_item_q6" translatable="false">Cristiano Ronaldo</string>
+    <string name="benzema_item_q6" translatable="false">Benzema</string>
+    <string name="ibrahimovic_item_q6" translatable="false">Ibrahimovic</string>
     <string name="submit">Submit</string>
-    <string name="which_team_did_win_2014_world_cup">Which team did win Brazil \'14 ?</string>
-    <string name="which_team_did_win_more_world_cups">Which team did win more World Cups ?</string>
-    <string name="youhavetobetteryoursoccerknowledge">You have to better your soccer knowledge</string>
-    <string name="youknowsomethingaboutsoccer">You know something about soccer, but you can do better</string>
-    <string name="prettygoodsoccerknowledge">You have a pretty good soccer knowledge</string>
-    <string name="soccerexpert">Compliments! You are a soccer expert</string>
-    <string name="acceptedreplies">"Accepted replies: "</string>
-    <string name="of6">" of 6"</string>
+    <string name="world_cup_2014_winner_q1">Which team did win Brazil \'14 ?</string>
+    <string name="more_world_cups_winner_q4">Which team did win more World Cups ?</string>
+    <string name="improve_knowledge_toast">You have to better your soccer knowledge</string>
+    <string name="something_knowledge_toast">You know something about soccer, but you can do better</string>
+    <string name="pretty_good_knowledge_toast">You have a pretty good soccer knowledge</string>
+    <string name="expert_knowledge_toast">Compliments! You are a soccer expert</string>
+    <string name="accepted_replies_toast">"Accepted replies: "</string>
+    <string name="of_6_toast">" of 6"</string>
 </resources>

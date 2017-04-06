@@ -129,16 +129,16 @@ public class MainActivity extends AppCompatActivity {
         String abilityMessage = "";
         int acceptedRepliesFinalValue = calculateScore();
         if (acceptedRepliesFinalValue == 0) {
-            abilityMessage = getString(R.string.youhavetobetteryoursoccerknowledge);
+            abilityMessage = getString(R.string.improve_knowledge_toast);
         } else if (acceptedRepliesFinalValue <= 2) {
-            abilityMessage = getString(R.string.youknowsomethingaboutsoccer);
+            abilityMessage = getString(R.string.something_knowledge_toast);
         } else if (acceptedRepliesFinalValue <= 4) {
-            abilityMessage = getString(R.string.prettygoodsoccerknowledge);
+            abilityMessage = getString(R.string.pretty_good_knowledge_toast);
         } else if (acceptedRepliesFinalValue <= 6) {
-            abilityMessage = getString(R.string.soccerexpert);
+            abilityMessage = getString(R.string.expert_knowledge_toast);
         }
         Context context = getApplicationContext();
-        CharSequence text = getString(R.string.acceptedreplies) + acceptedRepliesFinalValue + getString(R.string.of6);
+        CharSequence text = getString(R.string.accepted_replies_toast) + acceptedRepliesFinalValue + getString(R.string.of_6_toast);
         text = text + "\n" + abilityMessage;
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);

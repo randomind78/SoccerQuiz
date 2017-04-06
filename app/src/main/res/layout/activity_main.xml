@@ -36,20 +36,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/paddingbottomsubtitle"
-                android:text="@string/test_your_soccer_knowledge"
+                android:text="@string/test_soccer_knowledge"
                 android:textAppearance="@style/subtitle" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/which_team_did_win_2014_world_cup"
+                android:text="@string/world_cup_2014_winner_q1"
                 android:textAppearance="@style/questions" />
 
             <!-- START*** CardView Container *** -->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardBackgroundColor="@color/cardViewBackgroundColor"
                 card_view:cardCornerRadius="@dimen/cardcornerradius"
                 card_view:cardElevation="@dimen/cardelevation"
                 card_view:cardPreventCornerOverlap="true"
@@ -71,7 +71,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/italy_item_question1"
+                            android:text="@string/italy_item_q1"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -79,7 +79,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/brazil_question1"
+                            android:text="@string/brazil_item_q1"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -88,7 +88,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/germany"
+                            android:text="@string/germany_item_q1"
                             android:textColor="@android:color/white" />
                     </RadioGroup>
 
@@ -106,14 +106,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/who_did_win_more_golden_ball_awards"
+                android:text="@string/more_golden_ball_winner_q2"
                 android:textAppearance="@style/questions" />
 
             <!-- START*** CardView Container *** -->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardBackgroundColor="@color/cardViewBackgroundColor"
                 card_view:cardCornerRadius="@dimen/cardcornerradius"
                 card_view:cardElevation="@dimen/cardelevation"
                 card_view:cardPreventCornerOverlap="true"
@@ -124,7 +124,7 @@
                     android:id="@+id/question2_edittext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="@string/please_insert_player_surname_here"
+                    android:hint="@string/edit_text_hint"
                     android:textAppearance="@style/edit_text" />
 
             </android.support.v7.widget.CardView>
@@ -133,14 +133,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/who_did_score_more_goals_in_mexico_86"
+                android:text="@string/mexico_86_top_scorer_q3"
                 android:textAppearance="@style/questions" />
 
             <!-- START*** CardView Container *** -->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardBackgroundColor="@color/cardViewBackgroundColor"
                 card_view:cardCornerRadius="@dimen/cardcornerradius"
                 card_view:cardElevation="@dimen/cardelevation"
                 card_view:cardPreventCornerOverlap="true"
@@ -161,7 +161,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/lineker"
+                            android:text="@string/lineker_item_q3"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -169,7 +169,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/rivera"
+                            android:text="@string/rivera_item_q3"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -178,7 +178,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/margin"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/voeller"
+                            android:text="@string/voeller_item_q3"
                             android:textColor="@android:color/white" />
                     </RadioGroup>
 
@@ -198,7 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin"
-                android:text="@string/which_team_did_win_more_world_cups"
+                android:text="@string/more_world_cups_winner_q4"
                 android:textAppearance="@style/questions" />
 
 
@@ -206,7 +206,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardBackgroundColor="@color/cardViewBackgroundColor"
                 card_view:cardCornerRadius="@dimen/cardcornerradius"
                 card_view:cardElevation="@dimen/cardelevation"
                 card_view:cardPreventCornerOverlap="true"
@@ -228,7 +228,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/italy_question4"
+                            android:text="@string/italy_item_q4"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -236,7 +236,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/brazil_question4"
+                            android:text="@string/brazil_item_q4"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -245,7 +245,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/margin"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/holland"
+                            android:text="@string/holland_item_q4"
                             android:textColor="@android:color/white" />
                     </RadioGroup>
 
@@ -263,14 +263,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin"
-                android:text="@string/who_did_belong_italian_team_in_italy_90"
+                android:text="@string/italy_team_player_italy_90_q5"
                 android:textAppearance="@style/questions" />
 
             <!-- START*** CardView Container *** -->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardBackgroundColor="@color/cardViewBackgroundColor"
                 card_view:cardCornerRadius="@dimen/cardcontentpadding"
                 card_view:cardElevation="@dimen/cardelevation"
                 card_view:cardPreventCornerOverlap="true"
@@ -287,7 +287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:buttonTint="@android:color/white"
-                        android:text="@string/schillaci"
+                        android:text="@string/schillaci_item_q5"
                         android:textColor="@android:color/white" />
 
                     <CheckBox
@@ -296,7 +296,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/schillaci"
                         android:buttonTint="@android:color/white"
-                        android:text="@string/casiraghi"
+                        android:text="@string/casiraghi_item_q5"
                         android:textColor="@android:color/white" />
 
                     <CheckBox
@@ -306,7 +306,7 @@
                         android:layout_below="@id/casiraghi"
                         android:layout_marginBottom="@dimen/margin"
                         android:buttonTint="@android:color/white"
-                        android:text="@string/dossena"
+                        android:text="@string/dossena_item_q5"
                         android:textColor="@android:color/white" />
 
                     <ImageView
@@ -324,7 +324,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/who_did_win_his_fourth_golden_ball_in_2016"
+                android:text="@string/golden_ball_2016_winner_q6"
                 android:textAppearance="@style/questions" />
 
 
@@ -332,7 +332,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                card_view:cardBackgroundColor="#80d1d1d1"
+                card_view:cardBackgroundColor="@color/cardViewBackgroundColor"
                 card_view:cardCornerRadius="@dimen/cardcornerradius"
                 card_view:cardElevation="@dimen/cardelevation"
                 card_view:cardPreventCornerOverlap="true"
@@ -353,7 +353,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/cristiano_ronaldo"
+                            android:text="@string/cristiano_ronaldo_item_q6"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -361,7 +361,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/benzema"
+                            android:text="@string/benzema_item_q6"
                             android:textColor="@android:color/white" />
 
                         <RadioButton
@@ -369,7 +369,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@android:color/white"
-                            android:text="@string/ibrahimovic"
+                            android:text="@string/ibrahimovic_item_q6"
                             android:textColor="@android:color/white" />
                     </RadioGroup>
 
@@ -383,7 +383,6 @@
 
             </android.support.v7.widget.CardView>
             <!-- END*** CardView Container *** -->
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -399,12 +398,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|end"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/fab_MarginTop"
                     android:onClick="displayScore"
                     android:src="@drawable/ok"
-                    app:borderWidth="0dp"
-                    app:elevation="6dp"
-                    app:pressedTranslationZ="12dp" />
+                    app:borderWidth="@dimen/fab_BorderWidht"
+                    app:elevation="@dimen/fab_elevation"
+                    app:pressedTranslationZ="@dimen/fab_pressedTranslationZ" />
 
                 <TextView
                     android:layout_width="0dp"
