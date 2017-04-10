@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Padding & margin-->
-    <dimen name="padding">8dp</dimen>
+    <dimen name="padding">16dp</dimen>
     <dimen name="paddingbottomsubtitle">16dp</dimen>
-    <dimen name="margin">8sp</dimen>
+    <dimen name="margin">16sp</dimen>
     <!--Card View dimensions-->
     <dimen name="cardcornerradius">6dp</dimen>
     <dimen name="cardelevation">5dp</dimen>
