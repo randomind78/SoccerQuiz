@@ -20,8 +20,8 @@
 
         <LinearLayout
             android:id="@+id/activity_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingBottom="@dimen/padding"
             android:paddingLeft="@dimen/padding"
@@ -287,20 +287,20 @@
                         android:text="@string/schillaci_item_q5" />
 
                     <CheckBox
-                        android:id="@+id/casiraghi"
+                        android:id="@+id/zenga"
                         style="@style/checkboxes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/schillaci"
                         android:buttonTint="@android:color/white"
-                        android:text="@string/casiraghi_item_q5" />
+                        android:text="@string/zenga_item_q5" />
 
                     <CheckBox
                         android:id="@+id/dossena"
                         style="@style/checkboxes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/casiraghi"
+                        android:layout_below="@id/zenga"
                         android:layout_marginBottom="@dimen/margin"
                         android:buttonTint="@android:color/white"
                         android:text="@string/dossena_item_q5" />

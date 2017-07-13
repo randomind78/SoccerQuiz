@@ -91,11 +91,11 @@ public class MainActivity extends AppCompatActivity {
         int question5Value = 0;
         CheckBox schillaci_checkbox = (CheckBox) findViewById(R.id.schillaci);
         boolean schillaciValue = schillaci_checkbox.isChecked();
-        CheckBox casiraghi_checkbox = (CheckBox) findViewById(R.id.casiraghi);
-        boolean casiraghiValue = casiraghi_checkbox.isChecked();
+        CheckBox zenga_checkbox = (CheckBox) findViewById(R.id.zenga);
+        boolean zengaValue = zenga_checkbox.isChecked();
         CheckBox dossena_checkbox = (CheckBox) findViewById(R.id.dossena);
         boolean dossenaValue = dossena_checkbox.isChecked();
-        if (schillaciValue & casiraghiValue == false & dossenaValue == false) {
+        if (schillaciValue & zengaValue & dossenaValue == false) {
             question5Value = 1;
         } else {
             question5Value = 0;
